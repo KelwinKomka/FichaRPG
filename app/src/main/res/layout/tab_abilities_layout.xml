@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtAbilities"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/header"
+        android:background="@color/grey_800"
+        android:text="@string/skills"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/txtStrPick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/label"
+        android:text="@string/STRENGTH"
+        android:textAlignment="textStart"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/txtAbilities"
+        android:layout_alignStart="@+id/txtAbilities"
+        android:layout_toStartOf="@+id/spnStr"/>
+
+    <Spinner
+        android:id="@+id/spnStr"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_bg"
+        android:layout_marginEnd="10dp"
+        android:layout_alignBottom="@+id/txtStrPick"
+        android:layout_alignEnd="@+id/txtAbilities"/>
+
+    <TextView
+        android:id="@+id/txtDexPick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/label"
+        android:text="@string/DEXTERITY"
+        android:textAlignment="textStart"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/txtStrPick"
+        android:layout_alignStart="@+id/txtStrPick"
+        android:layout_toStartOf="@+id/spnDex"/>
+
+    <Spinner
+        android:id="@+id/spnDex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_bg"
+        android:layout_alignBottom="@+id/txtDexPick"
+        android:layout_alignStart="@+id/spnStr"
+        android:layout_alignEnd="@+id/spnStr"/>
+
+    <TextView
+        android:id="@+id/txtConPick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/label"
+        android:text="@string/CONSTITUTION"
+        android:textAlignment="textStart"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/txtDexPick"
+        android:layout_alignStart="@+id/txtStrPick"
+        android:layout_toStartOf="@+id/spnCon"/>
+
+    <Spinner
+        android:id="@+id/spnCon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_bg"
+        android:layout_alignBottom="@+id/txtConPick"
+        android:layout_alignStart="@+id/spnStr"
+        android:layout_alignEnd="@+id/spnStr"/>
+
+    <TextView
+        android:id="@+id/txtIntPick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/label"
+        android:text="@string/INTELLIGENCE"
+        android:textAlignment="textStart"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/txtConPick"
+        android:layout_alignStart="@+id/txtStrPick"
+        android:layout_toStartOf="@+id/spnInt"/>
+
+    <Spinner
+        android:id="@+id/spnInt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_bg"
+        android:layout_alignBottom="@+id/txtIntPick"
+        android:layout_alignStart="@+id/spnStr"
+        android:layout_alignEnd="@+id/spnStr"/>
+
+    <TextView
+        android:id="@+id/txtWisPick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/label"
+        android:text="@string/WISDOM"
+        android:textAlignment="textStart"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/txtIntPick"
+        android:layout_alignStart="@+id/txtStrPick"
+        android:layout_toStartOf="@+id/spnWis"/>
+
+    <Spinner
+        android:id="@+id/spnWis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_bg"
+        android:layout_alignBottom="@+id/txtWisPick"
+        android:layout_alignStart="@+id/spnStr"
+        android:layout_alignEnd="@+id/spnStr"/>
+
+    <TextView
+        android:id="@+id/txtChaPick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/label"
+        android:text="@string/CHARISMA"
+        android:textAlignment="textStart"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/txtWisPick"
+        android:layout_alignStart="@+id/txtStrPick"
+        android:layout_toStartOf="@+id/spnCha"/>
+
+    <Spinner
+        android:id="@+id/spnCha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_bg"
+        android:layout_alignBottom="@+id/txtChaPick"
+        android:layout_alignStart="@+id/spnStr"
+        android:layout_alignEnd="@+id/spnStr"/>
+
+    <LinearLayout
+        android:id="@+id/attributeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtChaPick"
+        android:layout_alignStart="@+id/txtAbilities"
+        android:layout_alignEnd="@+id/txtAbilities"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/iconAttLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgAttribute"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="125dp"
+                android:layout_weight="1"
+                android:src="@drawable/die_icon"
+                android:tooltipText="@string/attribute"
+                android:contentDescription="Atributo" />
+
+            <ImageView
+                android:id="@+id/imgMod"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/die_mod_icon"
+                android:tooltipText="@string/modifier"
+                android:contentDescription="Modificador" />
+
+            <ImageView
+                android:id="@+id/imgSave"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/die_save_icon"
+                android:tooltipText="@string/saveMod"
+                android:contentDescription="Teste de resistência" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/forceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/layout_line"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtStr"
+                style="@style/label"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/STRENGTH"
+                android:textAlignment="textStart"/>
+
+            <TextView
+                android:id="@+id/txtContStr"
+                style="@style/attribute"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/zero" />
+
+            <TextView
+                android:id="@+id/txtContStrMod"
+                style="@style/attribute"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/zero" />
+
+            <TextView
+                android:id="@+id/txtContStrSave"
+                style="@style/attribute"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/zero" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dexteriryLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/layout_line_light"
+            android:layout_marginStart="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtDex"
+                style="@style/label"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/DEXTERITY"
+                android:textAlignment="textStart"/>
+
+            <TextView
+                android:id="@+id/txtContDex"
+                style="@style/attribute"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/zero" />
+
+            <TextView
+                android:id="@+id/txtContDexMod"
+                style="@style/attribute"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/zero" />
+
+            <TextView
+                android:id="@+id/txtContDexSave"
+                style="@style/attribute"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/zero" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/constitutionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/layout_line"
+            android:layout_marginStart="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtCon"
+                style="@style/label"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/CONSTITUTION"
+                android:textAlignment="textStart"/>
+
+            <TextView
+                android:id="@+id/txtContCon"
+                style="@style/attribute"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/zero" />
+
+            <TextView
+                android:id="@+id/txtContConMod"
+                style="@style/attribute"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/zero" />
+
+            <TextView
+                android:id="@+id/txtContConSave"
+                style="@style/attribute"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/zero" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/intelligenceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/layout_line_light"
+            android:layout_marginStart="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtInt"
+                style="@style/label"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/INTELLIGENCE"
+                android:textAlignment="textStart"/>
+
+            <TextView
+                android:id="@+id/txtContInt"
+                style="@style/attribute"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/zero" />
+
+            <TextView
+                android:id="@+id/txtContIntMod"
+                style="@style/attribute"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/zero" />
+
+            <TextView
+                android:id="@+id/txtContIntSave"
+                style="@style/attribute"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/zero" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wisdomLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/layout_line"
+            android:layout_marginStart="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtWis"
+                style="@style/label"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/WISDOM"
+                android:textAlignment="textStart"/>
+
+            <TextView
+                android:id="@+id/txtContWis"
+                style="@style/attribute"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/zero" />
+
+            <TextView
+                android:id="@+id/txtContWisMod"
+                style="@style/attribute"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/zero" />
+
+            <TextView
+                android:id="@+id/txtContWisSave"
+                style="@style/attribute"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/zero" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/charismaLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/layout_line_light"
+            android:layout_marginStart="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtCha"
+                style="@style/label"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/CHARISMA"
+                android:textAlignment="textStart"/>
+
+            <TextView
+                android:id="@+id/txtContCha"
+                style="@style/attribute"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/zero" />
+
+            <TextView
+                android:id="@+id/txtContChaMod"
+                style="@style/attribute"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/zero" />
+
+            <TextView
+                android:id="@+id/txtContChaSave"
+                style="@style/attribute"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/zero" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

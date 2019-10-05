@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtRace"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/header"
+        android:background="@color/grey_800"
+        android:text="@string/race"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"/>
+
+    <Spinner
+        android:id="@+id/spnRace"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/spinner_bg"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/txtRace"
+        android:layout_alignStart="@+id/txtRace"
+        android:layout_alignEnd="@+id/txtRace"/>
+
+    <LinearLayout
+        android:id="@+id/layoutInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/text_border"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/spnRace"
+        android:layout_alignStart="@id/spnRace"
+        android:layout_alignEnd="@+id/spnRace"
+        android:layout_above="@+id/btnConfirm">
+
+        <EditText
+            android:id="@+id/txtInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:text="@string/empty"
+            android:ems="200"
+            android:gravity="start|top"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:focusable="false"
+            android:background="@color/grey_800"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm"
+        android:layout_marginBottom="10dp"
+        android:layout_alignStart="@+id/spnRace"
+        android:layout_alignEnd="@+id/spnRace"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

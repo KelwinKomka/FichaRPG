@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuItemRoll"
+        android:title="@string/rollRegistry"/>
+    <item
+        android:id="@+id/menuItemModify"
+        android:title="@string/modifySheet"/>
+</menu>

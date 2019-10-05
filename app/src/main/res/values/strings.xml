@@ -1,0 +1,199 @@
+<resources>
+    <string name="app_name">Ficha RPG</string>
+
+    <!--Labels Sheet-->
+    <string name="name">Nome</string>
+    <string name="hp">0/0</string>
+    <string name="level">Nível</string>
+    <string name="classChar">Classe</string>
+    <string name="race">Raça</string>
+    <string name="attribute">Atributo</string>
+    <string name="modifier">Modificador</string>
+    <string name="saveMod">Modificador de Resistência</string>
+    <string name="STRENGTH">Força</string>
+    <string name="DEXTERITY">Destreza</string>
+    <string name="CONSTITUTION">Constituição</string>
+    <string name="INTELLIGENCE">Inteligência</string>
+    <string name="WISDOM">Sabedoria</string>
+    <string name="CHARISMA">Carisma</string>
+
+    <string name="zero">0</string>
+    <string name="empty">N/D</string>
+    <string name="noInfo">Sem informação</string>
+
+    <string name="experience">Experiência</string>
+    <string name="proficiency">Proficiência</string>
+    <string name="armorClass">Classe de Armadura</string>
+    <string name="initiative">Iniciativa</string>
+    <string name="inspiration">Inspiração</string>
+    <string name="speed">Deslocamento</string>
+    <string name="passive">Habilitades Passivas</string>
+
+    <string name="info">Informações</string>
+    <string name="skills">Habilidades</string>
+    <string name="spell">Magia</string>
+    <string name="spells">Magias</string>
+    <string name="equipment">Equipamento</string>
+    <string name="notes">Anotações</string>
+    <string name="action">Ação</string>
+    <string name="actions">Ações</string>
+    <string name="features">Características</string>
+    <string name="descriptions">Descrições</string>
+    <string name="description">Descrição</string>
+    <string name="dice">Dados</string>
+
+    <string name="acrobatics">Acrobacia (Des)</string>
+    <string name="arcana">Arcanismo (Int)</string>
+    <string name="athletics">Atletismo (For)</string>
+    <string name="performance">Atuação (Car)</string>
+    <string name="deception">Blefar (Car)</string>
+    <string name="stealth">Furtividade (Des)</string>
+    <string name="history">História (Int)</string>
+    <string name="intimidation">Intimidação (Car)</string>
+    <string name="insight">Intuição (Sab)</string>
+    <string name="investigation">Investigação (Int)</string>
+    <string name="animalHandling">Lidar com Animais (Sb)</string>
+    <string name="medicine">Medicina (Sab)</string>
+    <string name="nature">Natureza (Int)</string>
+    <string name="perception">Percepção (Sab)</string>
+    <string name="persuasion">Persuasão (Car)</string>
+    <string name="sleightOfHand">Prestidigitação (Des)</string>
+    <string name="religion">Religião (Int)</string>
+    <string name="survival">Sobrevivência (Sab)</string>
+
+    <string name="ACROBATICS">Acrobacia</string>
+    <string name="ARCANA">Arcanismo</string>
+    <string name="ATHLETICS">Atletismo</string>
+    <string name="PERFORMANCE">Atuação</string>
+    <string name="DECEPTION">Blefar</string>
+    <string name="STEALTH">Furtividade</string>
+    <string name="HISTORY">História</string>
+    <string name="INTIMIDATION">Intimidação</string>
+    <string name="INSIGHT">Intuição</string>
+    <string name="INVESTIGATION">Investigação</string>
+    <string name="ANIMALHANDLING">Lidar com Animais</string>
+    <string name="MEDICINE">Medicina</string>
+    <string name="NATURE">Natureza</string>
+    <string name="PERCEPTION">Percepção</string>
+    <string name="PERSUASION">Persuasão</string>
+    <string name="SLEIGHTOFHAND">Prestidigitação</string>
+    <string name="RELIGION">Religião</string>
+    <string name="SURVIVAL">Sobrevivência</string>
+
+    <string name="exit">Sair</string>
+    <string name="confirm">Confirmar</string>
+    <string name="background">Antecedente</string>
+    <string name="alignment">Alinhamento</string>
+    <string name="lifestyle">Estilo de Vida</string>
+    <string name="faith">Fé</string>
+    <string name="preferences">Preferências</string>
+
+    <string name="encumbrance">Regra de peso</string>
+    <string name="weight">Peso</string>
+    <string name="gender">Gênero</string>
+    <string name="eyes">Olhos</string>
+    <string name="size">Tamanho</string>
+    <string name="height">Altura</string>
+    <string name="age">Idade</string>
+    <string name="traits">Traços</string>
+
+    <string name="platinum">Platina</string>
+    <string name="electrum">Electrum</string>
+    <string name="gold">Ouro</string>
+    <string name="silver">Prata</string>
+    <string name="copper">Bronze</string>
+
+    <string name="item">Item</string>
+    <string name="type">Tipo</string>
+    <string name="value">Valor</string>
+
+    <string name="weapon">Arma</string>
+    <string name="armor">Armadura</string>
+    <string name="gear">Equipamento</string>
+    <string name="tool">Ferramenta</string>
+    <string name="ammunition">Munição</string>
+
+    <string name="LIGHT_ARMOR">Armadura Leve</string>
+    <string name="MEDIUM_ARMOR">Armadura Média</string>
+    <string name="HEAVY_ARMOR">Armadura Pesada</string>
+    <string name="SHIELD">Escudo</string>
+
+    <string name="SIMPLE_WEAPONS">Armas Simples</string>
+    <string name="MARTIAL_WEAPONS">Armas Marciais</string>
+
+    <string name="THIEVES_TOOLS">Ferramentas de Ladrão</string>
+
+    <string name="GEAR">Equipamento</string>
+    <string name="TOOL">Ferramenta</string>
+
+    <string name="classEquip">Equipamento da classe</string>
+    <string name="backgroundEquip">Equipamento do antecedente</string>
+    <string name="addEquip">Adicionar Equipamento</string>
+    <string name="addGold">Adicionar Ouro</string>
+    <string name="summary">Resumo</string>
+
+    <string name="finishSheet">Finalizar ficha</string>
+    <string name="modifySheet">Modificar ficha</string>
+    <string name="rollRegistry">Registros de rolagem</string>
+
+    <string name="languages">Idiomas</string>
+    <string name="ABYSSAL">Abissal</string>
+    <string name="CELESTIAL">Celestial</string>
+    <string name="COMMON">Comum</string>
+    <string name="DEEPSPEECH">Dialeto Subterrâneo</string>
+    <string name="DRACONIC">Dracônico</string>
+    <string name="DWARVISH">Anão</string>
+    <string name="ELVISH">Élfico</string>
+    <string name="GIANT">Gigante</string>
+    <string name="GNOMISH">Gnômico</string>
+    <string name="GOBLIN">Goblin</string>
+    <string name="HALFLING">Halfling</string>
+    <string name="INFERNAL">Infernal</string>
+    <string name="ORC">Orc</string>
+    <string name="PRIMORDIAL">Primordial</string>
+    <string name="SYLVAN">Silvestre</string>
+    <string name="UNDERCOMMON">Subcomum</string>
+
+    <string name="sheets">Fichas</string>
+    <string name="createSheet">Criar Ficha</string>
+    <string name="createItem">Criar Item</string>
+    <string name="delete">Apagar</string>
+    <string name="select">Selecionar</string>
+
+    <string name="CLERIC">Clérigo</string>
+    <string name="FIGHTER">Lutador</string>
+    <string name="PALADIN">Paladino</string>
+    <string name="ROGUE">Ladino</string>
+    <string name="WIZARD">Mago</string>
+
+    <string name="ACOLYTE">Acólito</string>
+    <string name="CRIMINAL">Criminoso</string>
+    <string name="FOLKHERO">Herói local</string>
+    <string name="NOBLE">Nobre</string>
+    <string name="SAGE">Sábio</string>
+    <string name="SOLDIER">Soldado</string>
+
+    <string name="quantity">Qtd</string>
+    <string name="cost">Custo</string>
+
+    <string name="roll">Jogada</string>
+    <string name="die">Dado</string>
+    <string name="mod">Mod</string>
+    <string name="result">Resultado</string>
+    <string name="clear">Limpar</string>
+    <string name="play">Jogar</string>
+    <string name="attack">Ataque</string>
+    <string name="reach">Alcance</string>
+    <string name="hit">Hit</string>
+    <string name="damage">Dano</string>
+
+    <string name="armorProf">Proficiência com Armadura</string>
+    <string name="weaponProf">Proficiência com Armas</string>
+
+    <string-array name="encumbranceRule">
+        <item>Sem sobrecarga</item>
+        <item>Com sobrecarga</item>
+        <item>Sobrecarga variante</item>
+    </string-array>
+
+</resources>
