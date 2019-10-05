@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/header"
+        android:background="@color/grey_800"
+        android:text="@string/descriptions"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/txtStrPick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/label"
+        android:text="@string/background"
+        android:textAlignment="textStart"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/txtName"
+        android:layout_alignStart="@+id/txtName"
+        android:layout_alignEnd="@+id/txtName"/>
+
+    <Spinner
+        android:id="@+id/spnBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/spinner_bg"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txtStrPick"
+        android:layout_alignStart="@+id/txtStrPick"
+        android:layout_alignEnd="@+id/txtStrPick"/>
+
+    <TextView
+        android:id="@+id/txtAlignment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style="@style/label"
+        android:text="@string/alignment"
+        android:textAlignment="textStart"
+        android:layout_below="@+id/spnBackground"
+        android:layout_alignStart="@+id/txtStrPick"
+        android:layout_alignEnd="@+id/txtStrPick"/>
+
+    <Spinner
+        android:id="@+id/spnAlignment"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/spinner_bg"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txtAlignment"
+        android:layout_alignStart="@+id/txtStrPick"
+        android:layout_alignEnd="@+id/txtStrPick"/>
+
+    <TextView
+        android:id="@+id/txtLifeStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style="@style/label"
+        android:text="@string/lifestyle"
+        android:textAlignment="textStart"
+        android:layout_below="@+id/spnAlignment"
+        android:layout_alignStart="@+id/txtStrPick"
+        android:layout_alignEnd="@+id/txtStrPick"/>
+
+    <Spinner
+        android:id="@+id/spnLifeStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/spinner_bg"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txtLifeStyle"
+        android:layout_alignStart="@+id/txtStrPick"
+        android:layout_alignEnd="@+id/txtStrPick"/>
+
+    <TextView
+        android:id="@+id/txtFaith"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style="@style/label"
+        android:text="@string/faith"
+        android:textAlignment="textStart"
+        android:layout_below="@+id/spnLifeStyle"
+        android:layout_alignStart="@+id/txtStrPick"
+        android:layout_alignEnd="@+id/txtStrPick"/>
+
+    <EditText
+        android:id="@+id/edtFaith"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txtFaith"
+        android:layout_alignStart="@+id/txtStrPick"
+        android:layout_alignEnd="@+id/txtStrPick"/>
+
+    <RelativeLayout
+        android:id="@+id/layoutCharacteristics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/edtFaith"
+        android:layout_alignStart="@+id/txtStrPick"
+        android:layout_alignEnd="@+id/txtStrPick"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/txtGender"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/gender"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"/>
+
+        <EditText
+            android:id="@+id/edtGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_below="@+id/txtGender"
+            android:layout_alignStart="@+id/txtGender"
+            android:layout_alignEnd="@+id/txtGender"/>
+
+        <TextView
+            android:id="@+id/txtEyes"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/eyes"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginStart="5dp"
+            android:layout_alignBaseline="@+id/txtGender"
+            android:layout_toEndOf="@+id/edtGender"/>
+
+        <EditText
+            android:id="@+id/edtEyes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_below="@+id/txtEyes"
+            android:layout_alignStart="@+id/txtEyes"
+            android:layout_alignEnd="@+id/txtEyes"/>
+
+        <TextView
+            android:id="@+id/txtSize"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/size"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginStart="5dp"
+            android:layout_alignBaseline="@+id/txtGender"
+            android:layout_toEndOf="@+id/edtEyes"/>
+
+        <EditText
+            android:id="@+id/edtSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_below="@+id/txtSize"
+            android:layout_alignStart="@+id/txtSize"
+            android:layout_alignEnd="@+id/txtSize"/>
+
+        <TextView
+            android:id="@+id/txtHeight"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/height"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/edtGender"
+            android:layout_alignStart="@+id/txtGender"/>
+
+        <EditText
+            android:id="@+id/edtHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_below="@+id/txtHeight"
+            android:layout_alignStart="@+id/txtHeight"
+            android:layout_alignEnd="@+id/txtHeight"/>
+
+        <TextView
+            android:id="@+id/txtAge"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/age"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginStart="5dp"
+            android:layout_alignBaseline="@+id/txtHeight"
+            android:layout_toEndOf="@+id/edtHeight"/>
+
+        <EditText
+            android:id="@+id/edtAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:inputType="number"
+            android:layout_below="@+id/txtAge"
+            android:layout_alignStart="@+id/txtAge"
+            android:layout_alignEnd="@+id/txtAge"/>
+
+        <TextView
+            android:id="@+id/txtTraits"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/traits"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_below="@+id/edtHeight"
+            android:layout_alignStart="@+id/txtGender"
+            android:layout_alignParentEnd="true"/>
+
+        <EditText
+            android:id="@+id/edtTraits"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/text_border"
+            android:textSize="14sp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:layout_below="@+id/txtTraits"
+            android:layout_alignStart="@+id/txtTraits"
+            android:layout_alignEnd="@+id/txtTraits"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

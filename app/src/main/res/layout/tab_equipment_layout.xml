@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtEquipment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/header"
+        android:background="@color/grey_800"
+        android:text="@string/equipment"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtEquipment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_700"/>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/tabEquip"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txtClassEquip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/label"
+                        android:textAlignment="textStart"
+                        android:text="@string/classEquip"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"/>
+
+                    <ScrollView
+                        android:id="@+id/scrClassEquip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/text_border"
+                        android:layout_below="@+id/txtClassEquip"
+                        android:layout_alignStart="@+id/txtClassEquip"
+                        android:layout_alignEnd="@+id/txtClassEquip">
+
+                        <TableLayout
+                            android:id="@+id/tblClassEquip"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TableLayout>
+                    </ScrollView>
+
+                    <TextView
+                        android:id="@+id/txtBackgroundEquip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/label"
+                        android:textAlignment="textStart"
+                        android:text="@string/backgroundEquip"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@+id/scrClassEquip"
+                        android:layout_alignStart="@+id/txtClassEquip"
+                        android:layout_alignEnd="@+id/txtClassEquip"/>
+
+                    <ScrollView
+                        android:id="@+id/scrBackgroundEquip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/text_border"
+                        android:layout_below="@+id/txtBackgroundEquip"
+                        android:layout_above="@+id/btnAddEquip"
+                        android:layout_alignStart="@+id/txtBackgroundEquip"
+                        android:layout_alignEnd="@+id/txtBackgroundEquip">
+
+                        <TableLayout
+                            android:id="@+id/tblBackgroundEquip"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                        </TableLayout>
+                    </ScrollView>
+
+                    <Button
+                        android:id="@+id/btnAddEquip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/addEquip"
+                        android:layout_marginBottom="10dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignStart="@+id/txtClassEquip"
+                        android:layout_alignEnd="@id/txtClassEquip"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tabGold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txtGold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/label"
+                        android:text="@string/gold"
+                        android:textAlignment="textStart"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignBaseline="@+id/edtGold"/>
+
+                    <EditText
+                        android:id="@+id/edtGold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text="@string/zero"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_centerInParent="true"
+                        android:layout_toStartOf="@+id/txtQuantity"
+                        android:layout_toEndOf="@+id/txtGold"/>
+
+                    <TextView
+                        android:id="@+id/txtQuantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="x 10"
+                        android:layout_marginEnd="50dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignBaseline="@+id/edtGold"/>
+
+                    <Button
+                        android:id="@+id/btnAddGold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/addGold"
+                        android:layout_marginBottom="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignStart="@+id/txtGold"
+                        android:layout_alignEnd="@id/txtQuantity"/>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>

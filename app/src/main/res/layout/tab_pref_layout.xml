@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtPreferences"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/header"
+        android:background="@color/grey_800"
+        android:text="@string/preferences"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/prefTxtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/label"
+        android:text="@string/name"
+        android:textAlignment="textStart"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/txtPreferences"
+        android:layout_alignStart="@+id/txtPreferences"
+        android:layout_alignEnd="@+id/txtPreferences"/>
+
+    <EditText
+        android:id="@+id/prefEdtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@+id/prefTxtName"
+        android:layout_alignEnd="@+id/prefTxtName"
+        android:layout_below="@+id/prefTxtName"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/prefTxtEncumbrance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/label"
+        android:text="@string/encumbrance"
+        android:textAlignment="textStart"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/prefEdtName"
+        android:layout_alignEnd="@+id/prefTxtName"
+        android:layout_alignStart="@+id/prefTxtName"/>
+
+    <Spinner
+        android:id="@+id/prefSpnEncumbrance"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/spinner_bg"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/prefTxtEncumbrance"
+        android:layout_alignStart="@+id/prefTxtEncumbrance"
+        android:layout_alignEnd="@+id/prefTxtEncumbrance"
+        android:entries="@array/encumbranceRule"/>
+
+    <TextView
+        android:id="@+id/prefTxtCoinWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/label"
+        android:text="Ignorar peso das moedas"
+        android:textAlignment="textStart"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/prefSpnEncumbrance"
+        android:layout_alignStart="@+id/prefTxtName"
+        android:layout_toStartOf="@+id/prefSwtCoinWeight"/>
+
+    <Switch
+        android:id="@+id/prefSwtCoinWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/prefSpnEncumbrance"
+        android:layout_alignBaseline="@+id/prefTxtCoinWeight"
+        android:layout_alignEnd="@+id/prefTxtName"/>
+
+</RelativeLayout>

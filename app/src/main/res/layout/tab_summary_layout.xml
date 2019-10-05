@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtSummary"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/header"
+        android:background="@color/grey_800"
+        android:text="@string/summary"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/label"
+        android:text="@string/name"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/txtSummary"
+        android:layout_alignStart="@+id/txtSummary"
+        android:layout_alignEnd="@+id/txtSummary"/>
+
+    <TextView
+        android:id="@+id/txtContName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/infoLabel"
+        android:textAlignment="textStart"
+        android:text="@string/empty"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/txtName"
+        android:layout_alignStart="@+id/txtName"
+        android:layout_alignEnd="@+id/txtName"/>
+
+    <TextView
+        android:id="@+id/txtRace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/label"
+        android:text="@string/race"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/txtContName"
+        android:layout_alignStart="@+id/txtName"
+        android:layout_alignEnd="@+id/txtName"/>
+
+    <TextView
+        android:id="@+id/txtContRace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/infoLabel"
+        android:textAlignment="textStart"
+        android:text="@string/empty"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/txtRace"
+        android:layout_alignStart="@+id/txtRace"
+        android:layout_alignEnd="@+id/txtRace"/>
+
+    <TextView
+        android:id="@+id/txtClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/label"
+        android:text="@string/classChar"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/txtContRace"
+        android:layout_alignStart="@+id/txtName"
+        android:layout_alignEnd="@+id/txtName"/>
+
+    <TextView
+        android:id="@+id/txtContClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/infoLabel"
+        android:textAlignment="textStart"
+        android:text="@string/empty"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/txtClass"
+        android:layout_alignStart="@+id/txtClass"
+        android:layout_alignEnd="@+id/txtClass"/>
+
+    <TextView
+        android:id="@+id/txtBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/label"
+        android:text="@string/background"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/txtContClass"
+        android:layout_alignStart="@+id/txtName"
+        android:layout_alignEnd="@+id/txtName"/>
+
+    <TextView
+        android:id="@+id/txtContBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/infoLabel"
+        android:textAlignment="textStart"
+        android:text="@string/empty"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/txtBackground"
+        android:layout_alignStart="@+id/txtBackground"
+        android:layout_alignEnd="@+id/txtBackground"/>
+
+    <Button
+        android:id="@+id/btnFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/finishSheet"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

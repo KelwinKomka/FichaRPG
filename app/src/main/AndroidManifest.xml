@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ES3.ficharpg">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ficha_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ficha_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity
+            android:name=".main.EquipmentEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.RollRegistryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.SheetPickActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.SheetCreationActivity"
+            android:label="@string/zero"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+    </application>
+
+</manifest>
